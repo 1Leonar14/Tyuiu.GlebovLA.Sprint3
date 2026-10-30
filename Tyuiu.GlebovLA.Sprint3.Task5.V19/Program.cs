@@ -35,12 +35,17 @@ namespace Tyuiu.GlebovLA.Sprint3.Task5.V19
             Console.WriteLine($"Конец внешнего цикла = {stopValue1}");
             Console.WriteLine($"Начало внутреннего цикла = {startValue2}");
             Console.WriteLine($"Конец внутреннего цикла = {stopValue2}");
+
+            Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 
             DataService ds = new DataService();
 
             double res = ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2);
+
             Console.WriteLine($"Двойная сумма = {res}");
+
+            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }

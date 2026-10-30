@@ -12,11 +12,12 @@ namespace Tyuiu.GlebovLA.Sprint3.Task5.V19.Lib
         public double GetSumSumSeries(int x, int startValue1, int stopValue1, int startValue2, int stopValue2)
         {
             double sum = 0;
-            for (int i = 1; i <= 3; i++)
+            int x_fixed = 2;
+            for (int i = startValue1; i <= stopValue1; i++)
             {
                 for (int k = startValue2; k <= stopValue2; k++)
                 {
-                    sum += Math.Pow(x / Math.Cos(x), k);
+                    sum += Math.Pow(x_fixed / Math.Cos(x_fixed), k);
                 }
             }
 
