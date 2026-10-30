@@ -16,7 +16,6 @@ namespace Tyuiu.GlebovLA.Sprint3.Task5.V19.Test
             int stopValue1 = 3;
             int startValue2 = 1;
             int stopValue2 = 6;
-
             double wait = 30598.002;
             double res = ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2);
 
