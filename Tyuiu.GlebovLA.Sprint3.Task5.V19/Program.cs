@@ -20,32 +20,22 @@ namespace Tyuiu.GlebovLA.Sprint3.Task5.V19
             Console.WriteLine("* Выполнил: Глебов Леонид Александрович | ПКТб-26-1                       *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Вычислить двойную сумму ряда по формуле при X=2.                        *");
+            Console.WriteLine("* Вычислить двойную сумму ряда по формуле.                                *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+            Console.Write("Введите значение X (по условию 2): ");
+            int x = Convert.ToInt32(Console.ReadLine());
 
-            int x = 2;
             int startValue1 = 1;
             int stopValue1 = 3;
             int startValue2 = 1;
             int stopValue2 = 6;
-
-            Console.WriteLine($"X = {x}");
-            Console.WriteLine($"Начало внешнего цикла = {startValue1}");
-            Console.WriteLine($"Конец внешнего цикла = {stopValue1}");
-            Console.WriteLine($"Начало внутреннего цикла = {startValue2}");
-            Console.WriteLine($"Конец внутреннего цикла = {stopValue2}");
-
-            Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-
             DataService ds = new DataService();
 
             double res = ds.GetSumSumSeries(x, startValue1, stopValue1, startValue2, stopValue2);
 
             Console.WriteLine($"Двойная сумма = {res}");
-
-            Console.WriteLine("***************************************************************************");
             Console.ReadKey();
         }
     }
